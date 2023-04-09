@@ -2,12 +2,29 @@
   "name": "ignite-todo-list",
   "private": true,
   "version": "0.0.0",
+  "description": "Ignite course todo list challenge",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquebortoletto/project-01-desafio-todo-list.git"
+  },
+  "keywords": [
+    "gitflow",
+    "react",
+    "husky",
+    "conventional-commits"
+  ],
+  "author": "Henrique Bortoletto <bortolettohenrique@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henriquebortoletto/project-01-desafio-todo-list.git/issues"
+  },
+  "homepage": "https://github.com/henriquebortoletto/project-01-desafio-todo-list.git#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
