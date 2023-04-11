@@ -1,6 +1,6 @@
 .header {
   background-color: var(--brand-color-gray-700);
-  padding: 7.2rem 1.6rem 8rem;
+  padding: 7.2rem var(--gap-default) 8rem;
 }
 
 .container {

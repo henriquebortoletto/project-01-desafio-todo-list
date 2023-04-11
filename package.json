@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/henriquebortoletto/project-01-desafio-todo-list.git#readme",
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

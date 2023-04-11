@@ -1,0 +1,58 @@
+.container {
+  max-width: calc(73.6rem + var(--gap-default) * 2);
+
+  margin: calc(var(--gap-default) * 2 * -1) auto 0;
+
+  padding-left: var(--gap-default);
+  padding-right: var(--gap-default);
+
+  display: grid;
+  gap: 6.5rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.form button {
+  background-color: var(--brand-color-blue-900);
+  color: var(--brand-color-gray-100);
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: var(--gap-default);
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.form button span {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 140%;
+}
+
+.form .group_input {
+  width: 100%;
+}
+
+.form .group_input input {
+  background: var(--brand-color-gray-500);
+  border: 0.1rem solid var(--brand-color-gray-700);
+  border-radius: 8px;
+
+  padding: calc(var(--gap-default) + 0.2rem);
+}
+
+@media (max-width: 480px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .form button {
+    justify-content: center;
+  }
+}
