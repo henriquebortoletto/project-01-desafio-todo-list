@@ -47,6 +47,43 @@
   padding: calc(var(--gap-default) + 0.2rem);
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2.4rem;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.info div p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: var(--brand-color-blue-500);
+}
+
+.info div:last-child p {
+  color: var(--brand-color-purple-500);
+}
+
+.info div span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: var(--brand-color-gray-200);
+
+  background: var(--brand-color-gray-400);
+  border-radius: 999px;
+
+  padding: 0.2rem 0.8rem;
+  display: inline-block;
+}
+
 @media (max-width: 480px) {
   .form {
     flex-direction: column;

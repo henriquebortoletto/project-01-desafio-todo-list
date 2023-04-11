@@ -1,0 +1,48 @@
+.task {
+  background-color: var(--brand-color-gray-500);
+
+  border: 1px solid var(--brand-color-gray-400);
+  border-radius: 8px;
+
+  box-shadow: 0rem 0.2rem 0.8rem rgba(0, 0, 0, 0.06);
+  padding: var(--gap-default);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 1.2rem;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.task form label {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+}
+
+.task form input {
+  width: auto;
+}
+
+.task form label p {
+  font-size: 1.4rem;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.task form label.done p {
+  text-decoration: line-through;
+  color: var(--brand-color-gray-300);
+}
+
+.task button {
+  color: var(--brand-color-gray-300);
+  line-height: 0;
+
+  padding: 0.2rem;
+  cursor: pointer;
+}

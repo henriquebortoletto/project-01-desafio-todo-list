@@ -1,9 +1,12 @@
 import { PlusCircle } from '@phosphor-icons/react'
 
 import Header from '@/components/Header'
+import Task from '@/components/Task'
 
 import S from '@/app.module.css'
 import './global.css'
+
+const tasks = [1, 2, 3, 4, 5]
 
 function App() {
 
@@ -32,8 +35,20 @@ function App() {
         </form>
 
         <section>
-          <div>...header</div>
-          <div>...tasks</div>
+          <div className={S.info}>
+            <div>
+              <p>Tarefas criadas</p>
+              <span>0</span>
+            </div>
+            <div>
+              <p>Concluídas</p>
+              <span>0</span>
+            </div>
+          </div>
+
+          {tasks.map(() => (
+            <Task />
+          ))}
         </section>
       </main>
     </>
