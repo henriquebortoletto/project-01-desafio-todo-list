@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { PlusCircle } from '@phosphor-icons/react'
 
 import Header from '@/components/Header'
@@ -9,6 +10,7 @@ import './global.css'
 
 
 function App() {
+  const [tasks, setTasks] = useState([])
 
   return (
     <>
@@ -46,7 +48,9 @@ function App() {
             </div>
           </div>
 
-          <Empty />
+          {!tasks.length && (
+            <Empty />
+          )}
         </section>
       </main>
     </>
