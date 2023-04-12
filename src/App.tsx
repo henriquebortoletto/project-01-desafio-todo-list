@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 import Task from '@/components/Task'
 import Empty from '@/components/Empty'
 
-import S from '@/app.module.css'
+import S from '@/App.module.css'
 import './global.css'
 
 
