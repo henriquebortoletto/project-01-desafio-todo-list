@@ -6,8 +6,8 @@ const Task = () => {
   return (
     <div className={S.task}>
       <form>
-        <label>
-          <input type="radio" />
+        <label htmlFor="task">
+          <input id="task" type="radio" />
           <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
         </label>
       </form>
