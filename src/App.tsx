@@ -2,11 +2,11 @@ import { PlusCircle } from '@phosphor-icons/react'
 
 import Header from '@/components/Header'
 import Task from '@/components/Task'
+import Empty from '@/components/Empty'
 
 import S from '@/app.module.css'
 import './global.css'
 
-const tasks = [1, 2, 3, 4, 5]
 
 function App() {
 
@@ -46,9 +46,7 @@ function App() {
             </div>
           </div>
 
-          {tasks.map(() => (
-            <Task />
-          ))}
+          <Empty />
         </section>
       </main>
     </>
