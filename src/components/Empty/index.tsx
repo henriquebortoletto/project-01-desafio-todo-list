@@ -2,7 +2,7 @@ import { ClipboardText } from '@phosphor-icons/react'
 
 import S from './styles.module.css'
 
-const Empty = () => {
+function Empty() {
   return (
     <div className={S.container}>
       <div className={S.info}>

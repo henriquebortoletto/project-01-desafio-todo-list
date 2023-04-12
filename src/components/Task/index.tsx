@@ -2,7 +2,7 @@ import { Trash } from '@phosphor-icons/react'
 
 import S from './styles.module.css'
 
-const Task = () => {
+function Task() {
   return (
     <div className={S.task}>
       <form>
