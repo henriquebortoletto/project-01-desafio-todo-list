@@ -27,6 +27,12 @@
   border-radius: 8px;
 
   cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+  background-color: var(--brand-color-blue-500);
 }
 
 .form button span {

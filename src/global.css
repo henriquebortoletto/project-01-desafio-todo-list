@@ -4,10 +4,12 @@
   --brand-color-purple-500: #8284FA;
   --brand-color-purple-900: #5E60CE;
 
+  --brand-color-purple-900-opacity-20: rgba(94, 96, 206, 0.2);
+
   --brand-color-blue-500: #4EA8DE;
   --brand-color-blue-900: #1E6F9F;
 
-  --brand-color-blue-opacity-40: rgba(78, 168, 222, 0.4);
+  --brand-color-blue-500-opacity-40: rgba(78, 168, 222, 0.4);
 
   --brand-color-danger: #E25858;
 
@@ -96,7 +98,7 @@ input {
 
   box-shadow:
     0 0 0 2px var(--brand-color-blue-500),
-    0 0 0 6px var(--brand-color-blue-opacity-40);
+    0 0 0 6px var(--brand-color-blue-500-opacity-40);
 }
 
 .sr-only {
