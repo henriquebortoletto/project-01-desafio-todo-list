@@ -2,7 +2,7 @@ import logoRocket from '@/assets/rocket.svg'
 
 import S from './styles.module.css'
 
-function Header() {
+const Header = () => {
   return (
     <header className={S.header}>
       <div className={S.container}>

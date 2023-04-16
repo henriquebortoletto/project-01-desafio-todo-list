@@ -11,31 +11,47 @@ export interface TaskProps {
 
 interface TaskContentProps {
   content: TaskProps
+  onDeleteTask: (id: string) => void
+  onUpdateTask: (id: string) => void
 }
 
-function Task({ content }: TaskContentProps) {
-  const uniqueIdPerTask = useId();
+const Task = ({
+  content,
+  onDeleteTask,
+  onUpdateTask
+}: TaskContentProps) => {
+  const uniqueIdPerTask = useId()
+
+  function handleDeleteTask() {
+    onDeleteTask(content.id)
+  }
+
+  function handleUpdateTask() {
+    onUpdateTask(content.id)
+  }
 
   const taskIsChecked = content.completed
 
   return (
     <div className={S.task}>
-      <form>
-        <label
-          htmlFor={uniqueIdPerTask}
-          className={taskIsChecked ? `${S.done}` : ''}
-        >
-          <input
-            id={uniqueIdPerTask}
-            className="sr-only"
-            type="checkbox"
-            defaultChecked={taskIsChecked}
-          />
-          <p>{content.title}</p>
-        </label>
-      </form>
+      <label
+        htmlFor={uniqueIdPerTask}
+        className={taskIsChecked ? `${S.done}` : ''}
+        onClick={handleUpdateTask}
+      >
+        <input
+          id={uniqueIdPerTask}
+          className="sr-only"
+          type="checkbox"
+          defaultChecked={taskIsChecked}
+        />
+        <p>{content.title}</p>
+      </label>
 
-      <button title="Deletar tarefa">
+      <button
+        title="Deletar tarefa"
+        onClick={handleDeleteTask}
+      >
         <Trash size={20} />
       </button>
     </div>
