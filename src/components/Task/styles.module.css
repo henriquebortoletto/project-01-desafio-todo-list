@@ -18,7 +18,7 @@
   margin-bottom: 1.2rem;
 }
 
-.task label p {
+.task label div {
   font-size: 1.4rem;
   line-height: 140%;
   cursor: pointer;
@@ -28,7 +28,7 @@
   gap: 1.2rem;
 }
 
-.task input[type="checkbox"] ~ p::before {
+.task input[type="checkbox"] ~ div::before {
   content: "";
 
   font-size: 1.2rem;
@@ -51,27 +51,27 @@
   flex: none;
 }
 
-.task input[type="checkbox"]:not(:checked) ~ p:hover::before {
+.task input[type="checkbox"]:not(:checked) ~ div:hover::before {
   background: var(--brand-color-purple-900-opacity-20);
 }
 
-.task input[type="checkbox"]:not(:checked) ~ p::before {
+.task input[type="checkbox"]:not(:checked) ~ div::before {
   border-color: var(--brand-color-blue-500);
 }
 
-.task input[type="checkbox"]:checked ~ p:hover::before {
+.task input[type="checkbox"]:checked ~ div:hover::before {
   background: var(--brand-color-purple-500);
   border-color: var(--brand-color-purple-500);
 }
 
-.task input[type="checkbox"]:checked ~ p::before {
+.task input[type="checkbox"]:checked ~ div::before {
   content: "\2714";
 
   background: var(--brand-color-purple-900);
   border-color: var(--brand-color-purple-900);
 }
 
-.task label.done p {
+.task input[type="checkbox"]:checked ~ div p {
   text-decoration: line-through;
   color: var(--brand-color-gray-300);
 }

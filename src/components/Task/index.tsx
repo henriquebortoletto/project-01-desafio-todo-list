@@ -34,18 +34,17 @@ const Task = ({
 
   return (
     <div className={S.task}>
-      <label
-        htmlFor={uniqueIdPerTask}
-        className={taskIsChecked ? `${S.done}` : ''}
-        onClick={handleUpdateTask}
-      >
+      <label htmlFor={uniqueIdPerTask}>
         <input
           id={uniqueIdPerTask}
           className="sr-only"
           type="checkbox"
           defaultChecked={taskIsChecked}
+          onClick={handleUpdateTask}
         />
-        <p>{content.title}</p>
+        <div>
+          <p>{content.title}</p>
+        </div>
       </label>
 
       <button
